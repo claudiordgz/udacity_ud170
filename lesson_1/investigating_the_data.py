@@ -21,6 +21,8 @@ enrollment_num_unique_students = len(set([x['account_key'] for x in enrollments]
 for engagement_record in daily_engagement:
     engagement_record['account_key'] = engagement_record.pop('acct')
 
+print(daily_engagement[0]['account_key'])
+
 engagement_num_rows = len(daily_engagement)  # Replace this with your code
 engagement_num_unique_students = len(set([x['account_key'] for x in daily_engagement]))  # Replace this with your code
 
@@ -167,4 +169,5 @@ print 'Mean:', np.mean(total_minutes)
 print 'Standard deviation:', np.std(total_minutes)
 print 'Minimum:', np.min(total_minutes)
 print 'Maximum:', np.max(total_minutes)
+
 
